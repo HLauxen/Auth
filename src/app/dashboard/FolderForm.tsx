@@ -14,7 +14,7 @@ export default function FolderForm({handleCreateFolder}: {handleCreateFolder:(fo
             }}
             ref={ref}
         >
-            <div >
+            <div>
                 <label htmlFor="">To-do</label>
                 <input type="text" name="name" id="name" placeholder="my folder"/>
                 <button type="submit">submit</button>

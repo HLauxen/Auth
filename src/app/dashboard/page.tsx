@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { z } from 'zod';
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from 'next/navigation';
+import styles from './dashboard.module.css'
 
 
 const schema = z.object({
@@ -40,7 +41,7 @@ export default async function Dashboard(){
     }
 
     return (
-        <div>
+        <div className={styles.container}>
             <h1>Dashboard PORRA</h1>
             <FolderForm handleCreateFolder={createFolder}/>
             {folders.map(folder => <p key={folder.id}>{folder.name}</p>)}
