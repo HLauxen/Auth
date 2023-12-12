@@ -1,0 +1,23 @@
+.navstyle {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
+    background-color: black;
+    height: 73.0625px;
+}
+
+.divleft {
+    width: 48%;
+    margin: 2%;
+    color: white;
+    text-decoration: none;
+}
+.divright {
+    /* width: 40%; */
+    /* margin: 2%; */
+    text-align: end;
+}
+.linkstyle {
+    color: white;
+    text-decoration: none;
+}
