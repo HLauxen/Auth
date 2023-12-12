@@ -20,9 +20,9 @@ export default async function Dashboard(){
     if(!userId) {
         redirect('/');
     }
-    const folders = await xataClient.db.folders.filter({
+    const folders = await xataClient.db.folders.filter(
         userId
-    }).getMany();
+    ).getMany();
 
     async function createFolder(formData: FormData) {
         'use server';
